@@ -1,0 +1,10 @@
+p {
+    border: 5px solid black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    width: 50%;
+    box-shadow: 4px 8px 10px 0px violet;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}

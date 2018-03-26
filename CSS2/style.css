@@ -1,0 +1,14 @@
+h1, p {
+    border: 5px solid black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    width: 50%;
+    box-shadow: 4px 8px 10px 0px darkred;
+}
+
+body {
+    background-image: url("vietcong.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
