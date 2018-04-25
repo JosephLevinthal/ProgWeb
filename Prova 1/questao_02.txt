@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<h1 id="frase">Instituto de computação</h1>
+
+<body>
+    <input type="button" value="Adicionar Estilos" onclick="mudarCor('gray')">
+    <input type="button" value="Limpar Estilo" onclick="mudarCor('white'), mudarFonte()">
+
+    <script>
+
+        function mudarCor(novaCor) {
+            document.getElementById("frase").style.backgroundColor = novaCor;
+            document.getElementById("frase").style.color = "red";
+        }
+
+        function mudarFonte(fonte) {
+            document.getElementById("frase").style.color = "black";
+        }
+    </script>
+</body>
+
+</html>
