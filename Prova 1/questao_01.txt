@@ -1,0 +1,19 @@
+Erro 1 (linha 3) - A tag "body" está dentro da tag "head". E a tag head engloba elementos que não deveriam ser englobados dentro dela, que não são cabeçalhos.
+
+A solução seria separas as tags e tirar conteúdo que não é próprio da tag head e inserí-lo na tag body.
+
+
+Erro 2 (linha 4) - A sintaxe para a criação de comentários está errada, logo, a linguagem não reconhecerá a linha como um comentário. 
+
+A solução seria usar o formato: <!--comentario--> para fazer um comentário na linguagem.
+
+
+Erro 3 (linha 13) - A tag "<span>" não é fechada corretamente, fazendo todo o texto do resto do parágrafo ser afetado.
+
+A solução seria fechar corretamente a tag com </span>
+
+
+Erro 4 (linha 20 - 21) - É utilizado código javascript na página utilizando a tag "style".
+
+Solução - Utilizar a tag "script" para sinalizar um código javascript.
+
