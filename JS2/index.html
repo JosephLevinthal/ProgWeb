@@ -1,5 +1,6 @@
 <script>
     var perdeu = 0;
+    var pontuacao = 0;
     while (perdeu < 1) {
         var jogador = prompt("Voce escolhe: \n 1 - Pedra \n 2 - Papel \n 3 - Tesoura");
         var computador = Math.random();
@@ -24,27 +25,33 @@
             if (choice1 === choice2)
                 return ("Empate!")
             else if (choice1 === "1") {
-                if (choice2 === "3")
+                if (choice2 === "3") {
+                    pontuacao += 1;
                     return ("Você venceu!")
+                }
                 else {
                     perdeu = 1;
-                    return ("Você perdeu!")
+                    return "Você perdeu! Sua pontuacao: " + pontuacao;
                 }
             }
             else if (choice1 === "2") {
-                if (choice2 === "1")
+                if (choice2 === "1") {
+                    pontuacao += 1;
                     return "Você venceu!"
+                }
                 else {
                     perdeu = 1;
-                    return "Você perdeu!"
+                    return "Você perdeu! Sua pontuacao: " + pontuacao;
                 }
             }
             else if (choice1 === "3") {
-                if (choice2 === "2")
+                if (choice2 === "2") {
+                    pontuacao += 1;
                     return "Você venceu!"
+                }
                 else {
                     perdeu = 1;
-                    return "Você perdeu!"
+                    return "Você perdeu! Sua pontuacao: " + pontuacao;
                 }
             }
         }
