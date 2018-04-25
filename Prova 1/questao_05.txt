@@ -1,0 +1,78 @@
+commit 368bd221712e2c52282c0fc3bbcc91eb20d253eb
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 09:03:45 2018 -0400
+
+    questões da prova 1 a 4
+
+commit 684bddebf43c49aab08a907e093f74bb3449e8ff
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 02:28:55 2018 -0400
+
+    adicionado JS5
+
+commit 65f372316b862f9c90bd1dc31b32c9253a4f033f
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 02:18:15 2018 -0400
+
+    adicionado JS4
+
+commit fdf6afa86d14f6397630fe896f00acbbeebd65ee
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Tue Apr 24 22:06:31 2018 -0400
+
+    Correção do JS3
+
+commit 86ea6671518bf255aabe1f4dad593830a5862806
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Tue Apr 24 21:36:42 2018 -0400
+:...skipping...
+commit 368bd221712e2c52282c0fc3bbcc91eb20d253eb
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 09:03:45 2018 -0400
+
+    questões da prova 1 a 4
+
+commit 684bddebf43c49aab08a907e093f74bb3449e8ff
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 02:28:55 2018 -0400
+
+    adicionado JS5
+
+commit 65f372316b862f9c90bd1dc31b32c9253a4f033f
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Wed Apr 25 02:18:15 2018 -0400
+
+    adicionado JS4
+
+commit fdf6afa86d14f6397630fe896f00acbbeebd65ee
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Tue Apr 24 22:06:31 2018 -0400
+
+    Correção do JS3
+
+commit 86ea6671518bf255aabe1f4dad593830a5862806
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Tue Apr 24 21:36:42 2018 -0400
+
+    adicionada pontuação para o pedra, papel, tesoura (JS2)
+
+commit 5121f9147ef43a3fe00a8ef4bbad9ef45a1c97a2
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Sun Apr 22 17:02:39 2018 -0400
+
+    terminado JS2 (pedra, papel, tesoura)
+
+commit 2c8a5ea5a7493106ebe6ffc1fdf4c0212b28b360
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+Date:   Tue Apr 17 12:54:43 2018 -0400
+
+    Adicionado JS3
+
+commit c4008b356397ea833265f40228f21efcadc024ff
+Author: Joseph Levinthal <jvlo@icomp.ufam.edu.br>
+
+
+
+a) O diretório de trabalho é o estado atual de nossos arquivos, antes de serem adicionados à staging area ou a um repositório.
+
+b) O repositório local é o repositório de nossa máquina, que ainda não foi compartilhado com um repositório remoto, e por isso ainda não pode ser acessado por ferramentas como o github. Um repositório remoto é um repositório que está sendo compartilhado (tanto um repositório privado quanto um público) e pode ser acessado, clonado, e sofrer commits de outros computadores ou usuários.
