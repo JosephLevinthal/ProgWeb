@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<script type="text/javascript">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Instituto de Computação</title>
-    <style>
-        label {
-            display: inline-block;
-            width: 200px;
-            text-align: right;
-            padding: 4px;
-        }
-    </style>
-</head>
+    function AreaCirculo() {
+        var raio = form1.raio.value;
+        form1.total.value = (Math.PI) * (raio * raio);
+    }
 
-<body>
-    Informe o Raio
-    <input type="text" value="" name="Raio" id="raio" />
-    <input type="submit" name="ok" value="OK" />
+    function AreaCircunferencia() {
+        var raio = form1.raio.value;
+        form1.circ.value = ((Math.PI) * (raio * raio)) / 2;
+    }
 
-    <br> Área do círculo
-    <input type="text" value="" name="AreaDoCirculo" id="circulo" />
-    <br> Circunferência
-    <input type="text" value="" name="Circunferência" id="circunferencia" />
-
-</body>
-
-</html>
+</script>
+<form name="form1">
+    <label>Informe o raio:</label>
+    <input type="text" id="raio">
+    <input type="button" onClick="AreaCirculo(), AreaCircunferencia()" value="OK" <br>
+    <br>
+    <label>Área do círculo: </label>
+    <input type="text" id="total">
+    <br>
+    <label>Circunferência: </label>
+    <input type="text" id="circ" />
+    <br>
+</form>
