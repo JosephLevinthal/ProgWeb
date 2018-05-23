@@ -50,7 +50,6 @@
         this.element.style.left = parseInt(TAMX / 2) - 7 + 'px';
         this.velocidade = 1;
         this.distancia = 0;
-        //this.distancia += this.velocidade * (20 / FPS);
         this.vidas = 3;
 
         this.acelerar = function () {
