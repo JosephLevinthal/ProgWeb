@@ -32,7 +32,7 @@
         var dist = document.getElementById("distancia");
         var vida = document.getElementById("vidas");
 
-        dist.innerHTML = "Distancia: " + skier.distancia;
+        dist.innerHTML = "Distancia: " + Math.round(skier.distancia);
         vida.innerHTML = "Vidas: " + skier.vidas;
     }
 
@@ -49,7 +49,8 @@
         this.element.style.top = '30px';
         this.element.style.left = parseInt(TAMX / 2) - 7 + 'px';
         this.velocidade = 1;
-        this.distancia += this.velocidade * (20 / FPS);
+        this.distancia = 0;
+        //this.distancia += this.velocidade * (20 / FPS);
         this.vidas = 3;
 
         this.acelerar = function () {
@@ -72,6 +73,12 @@
             }
             if (this.direcao == 2) {
                 this.element.style.left = (parseInt(this.element.style.left) + 1) + "px";
+            }
+            if (skier.velocidade == 1.0) {
+                skier.distancia += 20 / FPS;
+            }
+            if (skier.velocidade == 1.5) {
+                skier.distancia += 30 / FPS;
             }
         }
     }
