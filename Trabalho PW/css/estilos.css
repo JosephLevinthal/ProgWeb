@@ -43,6 +43,14 @@
     position: absolute;
 }
 
+.toco {
+    background-image:url(obstacles.png);
+    background-position: -254px -48px;
+    width: 15px;
+    height: 16px;
+    position: absolute;
+}
+
 #montanha {
    border: 1px solid black;
    position: relative;

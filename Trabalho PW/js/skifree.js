@@ -5,6 +5,7 @@
     const PROB_ARVORE = 1.5;
     const PROB_ARBUSTO = 1;
     const PROB_ROCHA = 1;
+    const PROB_TOCO = 1;
     var gameLoop;
     var montanha;
     var skier;
@@ -12,6 +13,7 @@
     var arvores = [];
     var arbustos = [];
     var rochas = [];
+    var tocos = [];
 
     function init() {
         montanha = new Montanha();
@@ -119,6 +121,14 @@
         this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
     }
 
+    function Toco() {
+        this.element = document.createElement('div');
+        montanha.element.appendChild(this.element);
+        this.element.className = 'toco';
+        this.element.style.top = TAMY + "px";
+        this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
+    }
+
     function run() {
         var random = Math.floor(Math.random() * 1000);
 
@@ -147,6 +157,15 @@
 
         rochas.forEach(function (c) {
             c.element.style.top = (parseInt(c.element.style.top) - skier.velocidade) + "px";
+        });
+
+        if (random <= PROB_TOCO * 10) {
+            var toco = new Toco();
+            tocos.push(toco);
+        }
+
+        tocos.forEach(function (d) {
+            d.element.style.top = (parseInt(d.element.style.top) - skier.velocidade) + "px";
         });
 
         skier.andar();
