@@ -2,14 +2,16 @@
     const FPS = 50;
     const TAMX = 300;
     const TAMY = 400;
-    const PROB_ARVORE = 2;
-    const PROB_ARBUSTO = 2;
+    const PROB_ARVORE = 1.5;
+    const PROB_ARBUSTO = 1;
+    const PROB_ROCHA = 1;
     var gameLoop;
     var montanha;
     var skier;
     var direcoes = ['para-esquerda', 'para-frente', 'para-direita']
     var arvores = [];
     var arbustos = [];
+    var rochas = [];
 
     function init() {
         montanha = new Montanha();
@@ -109,6 +111,14 @@
         this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
     }
 
+    function Rocha() {
+        this.element = document.createElement('div');
+        montanha.element.appendChild(this.element);
+        this.element.className = 'rocha';
+        this.element.style.top = TAMY + "px";
+        this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
+    }
+
     function run() {
         var random = Math.floor(Math.random() * 1000);
 
@@ -128,6 +138,15 @@
 
         arbustos.forEach(function (b) {
             b.element.style.top = (parseInt(b.element.style.top) - skier.velocidade) + "px";
+        });
+
+        if (random <= PROB_ROCHA * 10) {
+            var rocha = new Rocha();
+            rochas.push(rocha);
+        }
+
+        rochas.forEach(function (c) {
+            c.element.style.top = (parseInt(c.element.style.top) - skier.velocidade) + "px";
         });
 
         skier.andar();

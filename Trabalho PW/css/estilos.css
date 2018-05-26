@@ -29,9 +29,17 @@
 
 .arbusto {
     background-image: url(obstacles.png);
-    background-position: -33px -110px;
+    background-position: -30px -110px;
     width: 15px;
     height: 15px;
+    position: absolute;
+}
+
+.rocha {
+    background-image: url(obstacles.png);
+    background-position: -36px -45px;
+    width: 15px;
+    height: 16px;
     position: absolute;
 }
 
