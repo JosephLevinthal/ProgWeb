@@ -3,11 +3,13 @@
     const TAMX = 300;
     const TAMY = 400;
     const PROB_ARVORE = 2;
+    const PROB_ARBUSTO = 2;
     var gameLoop;
     var montanha;
     var skier;
     var direcoes = ['para-esquerda', 'para-frente', 'para-direita']
     var arvores = [];
+    var arbustos = [];
 
     function init() {
         montanha = new Montanha();
@@ -99,21 +101,39 @@
         this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
     }
 
+    function Arbusto() {
+        this.element = document.createElement('div');
+        montanha.element.appendChild(this.element);
+        this.element.className = 'arbusto';
+        this.element.style.top = TAMY + "px";
+        this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
+    }
+
     function run() {
         var random = Math.floor(Math.random() * 1000);
+
         if (random <= PROB_ARVORE * 10) {
             var arvore = new Arvore();
             arvores.push(arvore);
         }
+
         arvores.forEach(function (a) {
             a.element.style.top = (parseInt(a.element.style.top) - skier.velocidade) + "px";
         });
 
+        if (random <= PROB_ARBUSTO * 10) {
+            var arbusto = new Arbusto();
+            arbustos.push(arbusto);
+        }
+
+        arbustos.forEach(function (b) {
+            b.element.style.top = (parseInt(b.element.style.top) - skier.velocidade) + "px";
+        });
 
         skier.andar();
         mudarInfo();
         colisao();
-        homemDasNeves();
+        //homemDasNeves();
     }
     init();
 })();
