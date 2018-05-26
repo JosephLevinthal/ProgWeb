@@ -75,12 +75,22 @@
         }
 
         this.andar = function () {
-            if (this.direcao == 0) {
+            if (this.direcao == 0 && skier.velocidade == 1) {
                 this.element.style.left = (parseInt(this.element.style.left) - 1) + "px";
             }
-            if (this.direcao == 2) {
+
+            if (this.direcao == 0 && skier.velocidade == 1.5) {
+                this.element.style.left = (parseInt(this.element.style.left) - 1.5) + "px";
+            }
+
+            if (this.direcao == 2 && skier.velocidade == 1.0) {
                 this.element.style.left = (parseInt(this.element.style.left) + 1) + "px";
             }
+
+            if (this.direcao == 2 && skier.velocidade == 1.5) {
+                this.element.style.left = (parseInt(this.element.style.left) + 2) + "px";
+            }
+
             if (skier.velocidade == 1.0) {
                 skier.distancia += 20 / FPS;
             }
