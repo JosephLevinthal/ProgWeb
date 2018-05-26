@@ -3,9 +3,10 @@
     const TAMX = 300;
     const TAMY = 400;
     const PROB_ARVORE = 1.5;
-    const PROB_ARBUSTO = 1;
-    const PROB_ROCHA = 1;
+    const PROB_ARBUSTO = 0.5;
+    const PROB_ROCHA = 0.5;
     const PROB_TOCO = 1;
+    const PROB_ARVORAO = 1.5;
     var gameLoop;
     var montanha;
     var skier;
@@ -14,6 +15,7 @@
     var arbustos = [];
     var rochas = [];
     var tocos = [];
+    var arvoronas = [];
 
     function init() {
         montanha = new Montanha();
@@ -129,6 +131,14 @@
         this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
     }
 
+    function Arvorao() {
+        this.element = document.createElement('div');
+        montanha.element.appendChild(this.element);
+        this.element.className = 'arvorao';
+        this.element.style.top = TAMY + "px";
+        this.element.style.left = Math.floor(Math.random() * TAMX) + "px";
+    }
+
     function run() {
         var random = Math.floor(Math.random() * 1000);
 
@@ -166,6 +176,15 @@
 
         tocos.forEach(function (d) {
             d.element.style.top = (parseInt(d.element.style.top) - skier.velocidade) + "px";
+        });
+
+        if (random <= PROB_ARVORAO * 10) {
+            var arvorao = new Arvorao();
+            arvoronas.push(arvorao);
+        }
+
+        arvoronas.forEach(function (f) {
+            f.element.style.top = (parseInt(f.element.style.top) - skier.velocidade) + "px";
         });
 
         skier.andar();

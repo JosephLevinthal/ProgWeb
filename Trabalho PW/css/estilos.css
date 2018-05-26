@@ -29,17 +29,17 @@
 
 .arbusto {
     background-image: url(obstacles.png);
-    background-position: -30px -110px;
-    width: 15px;
-    height: 15px;
+    background-position: -27px -100px;
+    width: 20px;
+    height: 19px;
     position: absolute;
 }
 
 .rocha {
     background-image: url(obstacles.png);
-    background-position: -36px -45px;
-    width: 15px;
-    height: 16px;
+    background-position: -32px -44px;
+    width: 20px;
+    height: 19px;
     position: absolute;
 }
 
@@ -48,6 +48,14 @@
     background-position: -254px -48px;
     width: 15px;
     height: 16px;
+    position: absolute;
+}
+
+.arvorao {
+    background-image:url(obstacles.png);
+    background-position: -95px -77px;
+    width: 34px;
+    height: 52px;
     position: absolute;
 }
 
@@ -65,7 +73,6 @@
     right: -301px;
     top: -402px;    
 }
-
 
 #skier {
    position: absolute;
