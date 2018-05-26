@@ -82,6 +82,15 @@
         }
     }
 
+    function colisao() {
+        if (skier.element.style.left < 0 + 'px') {
+            skier.element.style.left = 0 + 'px';
+        }
+        //if (skier.element.style.left > TAMX + "px") {
+        //skier.element.style.left = TAMX + "px";
+        //}
+    }
+
     function Arvore() {
         this.element = document.createElement('div');
         montanha.element.appendChild(this.element);
@@ -99,8 +108,12 @@
         arvores.forEach(function (a) {
             a.element.style.top = (parseInt(a.element.style.top) - skier.velocidade) + "px";
         });
+
+
         skier.andar();
         mudarInfo();
+        colisao();
+        homemDasNeves();
     }
     init();
 })();
