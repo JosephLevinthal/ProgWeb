@@ -5,7 +5,7 @@
     const PROB_ARVORE = 1.5;
     const PROB_ARBUSTO = 0.5;
     const PROB_ROCHA = 0.5;
-    const PROB_TOCO = 1;
+    const PROB_TOCO = 0.5;
     const PROB_ARVORAO = 1.5;
     var gameLoop;
     var montanha;
@@ -54,7 +54,7 @@
         this.element = document.getElementById("skier");
         this.direcao = 1; //0-esquerda;1-frente;2-direita
         this.element.className = 'para-frente';
-        this.element.style.top = '30px';
+        this.element.style.top = '35px';
         this.element.style.left = parseInt(TAMX / 2) - 7 + 'px';
         this.velocidade = 1;
         this.distancia = 0;
@@ -104,9 +104,18 @@
         if (skier.element.style.left < 0 + 'px') {
             skier.element.style.left = 0 + 'px';
         }
-        //if (skier.element.style.left > TAMX + "px") {
-        //skier.element.style.left = TAMX + "px";
-        //}
+        /*
+               if (skier.element.style.left > parseInt(TAMX) + 'px') {
+                   skier.element.style.left = (parseInt(TAMX - skier.element.clientWidth) + 'px');
+               }
+
+               var arvore_esquerda = parseInt(arvores[].element.style.left);
+               var arvore_direita = arvore_esquerda + parseInt(arvores[].element.clientWidth);
+        
+               if ((skier.element.style.left >= arvore_esquerda) && (skier.element.style.left <= arvore_direita)) {
+                   skier.velocidade = 0;
+               }
+        */
     }
 
     function Arvore() {
