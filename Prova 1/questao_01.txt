@@ -1,3 +1,6 @@
+Todos os erros foram identificados corretamente.
+Nota: 2.0
+
 Erro 1 (linha 3) - A tag "body" está dentro da tag "head". E a tag head engloba elementos que não deveriam ser englobados dentro dela, que não são cabeçalhos.
 
 A solução seria separas as tags e tirar conteúdo que não é próprio da tag head e inserí-lo na tag body.

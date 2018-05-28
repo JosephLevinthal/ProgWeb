@@ -1,3 +1,6 @@
+Conceito de closure correto. Explicação do código imprecisa.
+Nota: 1.5
+
 Closure é um recurso da linguagem JavaScript que permite que ela realize uma função semelhante ao de linguanges como Java, o encapsulamento de dados (semelhante ao "private", em Java). Nela, uma função "interior" tem acesso a variáveis de outra função, mais exterior.
 
 No exemplo, é criada a variável "moo" que recebe a função "foo" e a inicializa com o valor 2.
