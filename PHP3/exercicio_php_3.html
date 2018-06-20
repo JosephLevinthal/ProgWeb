@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instituto de Computação</title>
+</head>
+<body>
+	<h1>Formulário de Contato</h1>
+	<p>Por favor, preencha o formulário abaixo e clique no botão Enviar Mensagem. Agradecemos por seu contato.</p>
+	<form id="cadastro" method="post" action="exercicio_php_3.php">
+		<fieldset>
+			<legend>Dados Básicos</legend>
+					Nome <input type="text" name="nome" id="nome"/><br />
+					E-mail <input type="email" name="email" id="email" required placeholder="seunome@dominio.com.br"/><br />
+					Website <input type="text" value="http://" name="website" id="website" required placeholder="http://"/>
+		</fieldset>
+		<fieldset>
+			<legend>Digite sua Mensagem</legend>
+				<textarea name="mensagem" rows="4" cols="50">Este é o valor padrão!</textarea>
+		</fieldset>
+
+		<input type="reset" value="Resetar Dados" />
+		<input type="submit" name="submit" value="Enviar Mensagem" />
+	</form>
+</body>
+</html>
