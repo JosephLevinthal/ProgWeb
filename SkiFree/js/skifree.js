@@ -100,24 +100,6 @@
         }
     }
 
-    function colisao() {
-        if (skier.element.style.left < 0 + 'px') {
-            skier.element.style.left = 0 + 'px';
-        }
-        /*
-               if (skier.element.style.left > parseInt(TAMX) + 'px') {
-                   skier.element.style.left = (parseInt(TAMX - skier.element.clientWidth) + 'px');
-               }
-
-               var arvore_esquerda = parseInt(arvores[].element.style.left);
-               var arvore_direita = arvore_esquerda + parseInt(arvores[].element.clientWidth);
-        
-               if ((skier.element.style.left >= arvore_esquerda) && (skier.element.style.left <= arvore_direita)) {
-                   skier.velocidade = 0;
-               }
-        */
-    }
-
     function Arvore() {
         this.element = document.createElement('div');
         montanha.element.appendChild(this.element);
@@ -208,8 +190,6 @@
 
         skier.andar();
         mudarInfo();
-        colisao();
-        //homemDasNeves();
     }
     init();
 })();
