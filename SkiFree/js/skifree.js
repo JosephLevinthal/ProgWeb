@@ -52,7 +52,7 @@
 
     function Skier() {
         this.element = document.getElementById("skier");
-        this.direcao = 1; //0-esquerda;1-frente;2-direita
+        this.direcao = 1;
         this.element.className = 'para-frente';
         this.element.style.top = '35px';
         this.element.style.left = parseInt(TAMX / 2) - 7 + 'px';
